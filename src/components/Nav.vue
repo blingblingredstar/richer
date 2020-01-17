@@ -1,8 +1,14 @@
 <template>
   <div class="nav">
-    <router-link to="/account">记账</router-link>
-    <router-link to="/labels">标签</router-link>
-    <router-link to="/statistics">统计</router-link>
+    <router-link to="/account">
+      <Icon name="account" />记账
+    </router-link>
+    <router-link to="/labels">
+      <Icon name="labels" />标签
+    </router-link>
+    <router-link to="/statistics">
+      <Icon name="statistics" />统计
+    </router-link>
   </div>
 </template>
 
@@ -12,6 +18,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-  
-</style>
+<style lang="scss" scoped></style>
