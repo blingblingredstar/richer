@@ -20,9 +20,9 @@ export default {
   name: 'Icon',
   props: {
     name: {
-      type: String,
+      type: String as () => TIconName,
       required: true,
-      validator(value: TIconName) {
+      validator(value) {
         return ['account', 'labels', 'statistics'].includes(value)
       },
     },
