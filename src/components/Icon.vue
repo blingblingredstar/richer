@@ -22,7 +22,7 @@ export default {
     name: {
       type: String as () => TIconName,
       required: true,
-      validator(value) {
+      validator(value: string) {
         return ['account', 'labels', 'statistics'].includes(value)
       },
     },
