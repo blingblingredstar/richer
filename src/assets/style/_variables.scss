@@ -3,6 +3,7 @@ $color-dark: #443742;
 $color-yellow: #ffcd74;
 $color-light: #fcefef;
 $color-green: #7fd8be;
+$bg-light: #d9d9d9;
 
 $color-selected: $color-orange;
 
@@ -11,3 +12,22 @@ $font-hei: -apple-system, 'Noto Sans', 'Helvetica Neue', Helvetica,
   'Noto Sans CJK SC', 'Source Han Sans SC', 'Source Han Sans CN',
   'Microsoft YaHei', 'Wenquanyi Micro Hei', 'WenQuanYi Zen Hei', 'ST Heiti',
   SimHei, 'WenQuanYi Zen Hei Sharp', sans-serif;
+
+// placeholder
+%clearfix {
+  &::after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
+
+$color-shadow: rgba(0, 0, 0, 0.25);
+%outer-shadow {
+  box-shadow: 0 0 3px $color-shadow;
+}
+%inner-shadow {
+  $offset: 3px;
+  box-shadow: inset 0 (-$offset) $offset (-$offset) $color-shadow,
+    inset 0 $offset $offset (-$offset) $color-shadow;
+}

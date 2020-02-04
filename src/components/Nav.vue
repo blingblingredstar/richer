@@ -21,8 +21,8 @@ export default {
 <style lang="scss" scoped>
 @import '~@/assets/style/_variables.scss';
 .nav {
+  @extend %outer-shadow;
   display: flex;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
   font-size: 12px;
   > .nav-item {
     padding: 2px 0;
